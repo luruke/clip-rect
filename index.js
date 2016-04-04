@@ -110,7 +110,6 @@
 
     return TweenLite.to({}, this.vars.duration, {
       onUpdate: function() {
-        console.log('dsa');
         // Using onUpdate because onStart
         // is not called if the tween is 0 duration.
         if (this.isStarted) {
@@ -119,7 +118,6 @@
 
         this.isStarted = true;
         this.prepare();
-        console.log('start');
 
         TweenLite.to(this.el, this.vars.duration, {
           ease: this.vars.ease,
@@ -127,7 +125,6 @@
           immediateRender: true,
           onComplete: function() {
             this.vars.clearProps && this.clear();
-            console.log('on complete');
           },
           onCompleteScope: this
         });
