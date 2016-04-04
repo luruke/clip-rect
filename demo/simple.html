@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body, html {
+        padding: 0;
+        margin: 0;
+      }
+
+      .box {
+        height: 300px;
+        width: 300px;
+        background: red;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="box" class="box">
+
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+  <script type="text/javascript" src="../index.js"></script>
+
+  <script>
+    var el = document.getElementById('box');
+
+    new ClipRect(el, {
+      duration: 0,
+      clearProps: false,
+      reverse: true
+    });
+
+    window.setTimeout(function() {
+      new ClipRect(el, {
+        from: ClipRect.TOP,
+        to: ClipRect.BOTTOM
+      });
+    }, 3000);
+
+    window.setTimeout(function() {
+      new ClipRect(el, {
+        from: ClipRect.RIGHT,
+        to: ClipRect.LEFT,
+        duration: 1,
+        reverse: true,
+        clearProps: false
+      });
+    }, 4000);
+
+  </script>
+</html>

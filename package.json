@@ -1,0 +1,26 @@
+{
+  "name": "clip-rect",
+  "version": "1.0.0",
+  "description": "Helper to create clip rect animation with gsap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luruke/clip-rect.git"
+  },
+  "keywords": [
+    "clip",
+    "rect",
+    "gasp",
+    "animation",
+    "tween"
+  ],
+  "author": "@luruke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luruke/clip-rect/issues"
+  },
+  "homepage": "https://github.com/luruke/clip-rect"
+}
