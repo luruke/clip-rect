@@ -7,7 +7,7 @@ This little helper aims to make rect animations easier w/Greensock GSAP.
 
 
 # Usage
-```
+```javascript
 new ClipRect(HTMLElement[, options]);
 ```
 It returns a GSAP `TweenLite.to` call which can be used in GSAP timelines.
@@ -24,7 +24,7 @@ It returns a GSAP `TweenLite.to` call which can be used in GSAP timelines.
 | reverse | false      |    Reverse the animation (for animateOut) |
 
 # Example
-```
+```javascript
 var el = document.getElementById('box');
 
 new ClipRect(el, {
@@ -37,7 +37,7 @@ new ClipRect(el, {
 ```
 
 # Example with timeline
-```
+```javascript
 var el = document.getElementById('box');
 var tl = new TimelineLite();
 
