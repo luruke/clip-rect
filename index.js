@@ -98,7 +98,7 @@
       }
     }
 
-    return `rect(${c.top}px ${c.right}px ${c.bottom}px ${c.left}px)`;
+    return 'rect(' + c.top + 'px ' + c.right + 'px ' + c.bottom + 'px ' + c.left + 'px)';
   };
 
   ClipRect.prototype.prepare = function() {
