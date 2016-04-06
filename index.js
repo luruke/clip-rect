@@ -8,7 +8,7 @@
   }
 }(this, function () {
   var ClipRect = function(el, obj) {
-    if (typeof TweenLite === 'undefiend') {
+    if (typeof TweenLite === 'undefined') {
       return console.error('need GSAP to work.');
     }
 
