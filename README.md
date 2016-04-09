@@ -68,3 +68,6 @@ tl.add(new ClipRect(el, {
   clearProps: false
 }));
 ```
+
+![example](http://i.imgur.com/19TFaQH.gif)
+
