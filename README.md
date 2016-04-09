@@ -7,6 +7,10 @@ This little helper aims to make rect animations easier w/Greensock GSAP.
 
 
 # Usage
+```
+npm install clip-rect
+```
+
 ```javascript
 new ClipRect(HTMLElement[, options]);
 ```
