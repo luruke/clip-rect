@@ -43,7 +43,12 @@
   };
 
   ClipRect.prototype.getSize = function() {
-    return this.el.getBoundingClientRect();
+    if (this.bounding) {
+      return this.bounding;
+    }
+
+    this.bounding = this.el.getBoundingClientRect();
+    return this.bounding;
   };
 
   ClipRect.prototype.getRect = function(end) {
@@ -102,7 +107,7 @@
   };
 
   ClipRect.prototype.prepare = function() {
-    TweenLite.set(this.el, { clip: this.getRect() });
+    this.el.style.clip = this.getRect();
   };
 
   ClipRect.prototype.tween = function() {
@@ -134,7 +139,7 @@
   };
 
   ClipRect.prototype.clear = function() {
-    TweenLite.set(this.el, { clearProps: 'clip' });
+    this.el.style.clip = 'auto';
   };
 
   return ClipRect;
